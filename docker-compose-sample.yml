@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+  ethereum:
+    image: ethnode/geth:1.4.17
+    volumes:
+      - /data/store/geth:/var/lib/chaindata
+  netstats:
+    environment:
+      instance: 
+      contact_details: 
+    image: ethnode/stats
+    depends_on:
+      - ethereum
