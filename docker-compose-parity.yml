@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  ethereum:
+    image: ethnode/parity:1.3.6
+    volumes:
+      - /data/store/parity:/root/.parity
+  netstats:
+    image: ethnode/stats
+    environment:
+      instance: 
+      contact_details: 
+    image: ethnode/stats
+    depends_on:
+      - ethereum
