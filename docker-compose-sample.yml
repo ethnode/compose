@@ -4,8 +4,10 @@ services:
   ethereum:
     image: ethnode/geth:1.4.17
     volumes:
-      - /data/store/geth:/var/lib/chaindata
+      - /data/store/parity:/root/.parity
+      - /data/store/geth:/root/.ethereum
   netstats:
+    image: ethnode/stats
     environment:
       instance: 
       contact_details: 
