@@ -10,6 +10,5 @@ services:
     environment:
       instance: 
       contact_details: 
-    image: ethnode/stats
     depends_on:
       - ethereum
