@@ -27,10 +27,11 @@
 
 * 升级/降级
 
-用户唯一需要做的就是指明目标版本，修改后重建容器节点即可。
+如果用户需要紧跟最新版本，则不需要修改任何配置文件。对于需要升级到某个目标版本的用户，唯一需要做的就是在`docker-compose.yml`中指明目标版本，修改后重建容器节点即可。
 
 ```bash
 # < edit image version on docker-compose.yml >
+# docker-compose pull
 # docker-compose down
 # docker-compose up -d
 ```
