@@ -36,3 +36,4 @@
 # docker-compose up -d
 ```
 
+或者直接执行 upgrade.sh 脚本即可，内容一致
