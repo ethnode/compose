@@ -2,9 +2,10 @@ version: "2"
 
 services:
   ethereum:
-    image: ethnode/parity
+    image: ethnode/parity:1.4.4
     volumes:
       - /data/store/parity:/root/.parity
+    command: ' --gas-floor-target 3300000 --gasprice 20000000000 --port 30304'
   netstats:
     image: ethnode/stats
     environment:

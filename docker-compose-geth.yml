@@ -2,9 +2,10 @@ version: "2"
 
 services:
   ethereum:
-    image: ethnode/geth
+    image: ethnode/geth:1.5.2
     volumes:
       - /data/store/geth:/root/.ethereum
+    command: " --cache 1024 --targetgaslimit 3300000  --gasprice 20000000000"
   netstats:
     image: ethnode/stats
     environment:
