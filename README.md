@@ -2,8 +2,19 @@
 
 本项目用于构建星火计划中的以太坊节点。
 
+# prepare
+
 项目使用[docker](https://docs.docker.com/engine/installation/) 和
 [compose](https://docs.docker.com/compose/install/)，请预先安装
+
+以下命令可以用来验证环境，建议大版本不低于下面显示的版本
+
+```
+# docker -v
+Docker version 1.12.3, build 6b644ec
+# docker-compose -v
+docker-compose version 1.8.1, build 878cff1
+```
 
 # usage
 
