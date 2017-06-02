@@ -2,7 +2,7 @@ version: "2"
 
 services:
   ethereum:
-    image: ethnode/geth:1.5.2
+    image: ethnode/geth
     volumes:
       - /data/store/geth:/root/.ethereum
     command: " --cache 1024"
